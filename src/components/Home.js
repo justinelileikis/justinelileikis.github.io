@@ -5,7 +5,9 @@ class Home extends React.Component {
     render() {
         return (
             <div className="animated fadeIn">
-                <div className="g-profile g-sm-hidden g-xs-hidden"></div>
+                <div className="g-profile g-sm-hidden g-xs-hidden">
+                    <div className="g-profile-img"></div>
+                </div>
                 <div className="g-profile-copy-container">
                     <div className="g-profile-copy">
                         <h1>Justine Lileikis</h1>

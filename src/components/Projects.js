@@ -24,7 +24,10 @@ class Single extends React.Component {
 
     changeCategory(category){
         history.push('/projects?category=' + category)
-        this.setState({category: category});
+        this.setState({category: 'reset'});
+        setTimeout(() => {
+            this.setState({category: category});
+        }, 300);
     }
 
     clearCategory(){
@@ -49,9 +52,10 @@ class Single extends React.Component {
                 </div>
                 <div className="row margin-bottom g-margin-top">
                 {
-                    api.getProjects(category).map(p => (
+                    api.getProjects(category).map((p, index) => (
                         <div className="col-1of4 sm-1of2">
-                            <div className="animated fadeIn g-featured" style={{ backgroundImage: `url(${p.image})` }}>
+                            <div className="animated fadeIn g-featured" style={{ backgroundImage: `url(${p.image})`, animationDelay: `${index}`+'00ms' }}>
+                                <Link className="g-featured-link" to={p.url}></Link>
                                 <div className="g-text">
                                     <h2>View project</h2>
                                 </div>

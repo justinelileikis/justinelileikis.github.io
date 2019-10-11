@@ -72,31 +72,6 @@ const api = {
             ]
         },
         {
-            url: '3m-safety-admin-panel',
-            title: '3M Safety Admin Panel',
-            text: 'Find and edit product data, add products to your custom catalogues to create a professional PDF to share with clients.',
-            image: 'img/work/admin/1.png',
-            role: 'Development',
-            webapplications: true,
-            designsystems: true,
-            images: [{
-                    src: 'img/work/admin/1.png'
-                },
-                {
-                    src: 'img/work/admin/2.png'
-                },
-                {
-                    src: 'img/work/admin/3.png'
-                },
-                {
-                    src: 'img/work/admin/4.png'
-                },
-                {
-                    src: 'img/work/admin/5.png'
-                }
-            ]
-        },
-        {
             url: '3m-personal-safety-division',
             title: '3M Personal Safety Division',
             text: 'Find 3M Personal Safety Division products easier with 3M\'s Product Selector and Help Me Choose web application.',
@@ -258,6 +233,31 @@ const api = {
                 },
                 {
                     src: 'img/work/durham/9.png'
+                }
+            ]
+        },
+        {
+            url: '3m-safety-admin-panel',
+            title: '3M Safety Admin Panel',
+            text: 'Find and edit product data, add products to your custom catalogues to create a professional PDF to share with clients.',
+            image: 'img/work/admin/1.png',
+            role: 'Development',
+            webapplications: true,
+            designsystems: true,
+            images: [{
+                    src: 'img/work/admin/1.png'
+                },
+                {
+                    src: 'img/work/admin/2.png'
+                },
+                {
+                    src: 'img/work/admin/3.png'
+                },
+                {
+                    src: 'img/work/admin/4.png'
+                },
+                {
+                    src: 'img/work/admin/5.png'
                 }
             ]
         }

@@ -1465,6 +1465,38 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
   margin-left: .2em;
 }
 
+.g-margin-bottom {
+  margin-bottom: 2em;
+}
+
+.g-margin-top {
+  margin-top: 2em;
+}
+
+.g-margin-bottom-sm {
+  margin-bottom: .6em;
+}
+
+.g-margin-top-sm {
+  margin-top: .6em;
+}
+
+.g-padding-bottom {
+  padding-bottom: 2em;
+}
+
+.g-padding-top {
+  padding-top: 2em;
+}
+
+.g-padding-bottom-sm {
+  padding-bottom: 1em;
+}
+
+.g-padding-top-sm {
+  padding-top: 1em;
+}
+
 .g-hidden {
   display: none;
 }
@@ -2559,13 +2591,20 @@ html, body, .main, .page, .animated {
 }
 
 .g-profile {
-  background-image: url("/img/profile2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100%;
   width: 30%;
   position: absolute;
   top: 0;
+}
+.g-profile .g-profile-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/profile2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .g-profile-copy-container {
@@ -2606,6 +2645,14 @@ html, body, .main, .page, .animated {
   position: absolute;
   text-align: center;
   overflow: hidden;
+}
+.g-featured .g-featured-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 .g-featured h2 {
   font-size: 15px;

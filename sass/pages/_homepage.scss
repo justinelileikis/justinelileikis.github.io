@@ -6,13 +6,20 @@ html, body, .main, .page, .animated{
 }
 
 .g-profile{
-	background-image: url('/img/profile2.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
 	height: 100%;
 	width: 30%;
 	position: absolute;
 	top: 0;
+	.g-profile-img{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/img/profile2.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 }
 
 .g-profile-copy-container{

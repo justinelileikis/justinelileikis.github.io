@@ -26,6 +26,14 @@
 		text-align: center;
 		overflow: hidden;
 	}
+	.g-featured-link{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		right: 0;
+		z-index: 10;
+	}
 	h2{
 		@extend .transition2;
 		font-size: 15px;

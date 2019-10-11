@@ -15,11 +15,15 @@
 That will install gulp locally for your project, and create the folder `node_modules/` with all dependencies installed. You never need to run this again (unless another dependency is added), and you don't need to touch `node_modules`.
 
 ## Compiling for development
-1. Navigate to the project folder (in terminal) and run `gulp`. This compiles you SASS files into CSS and will watch for any changes and recompile on save. 
+1. Navigate to the project folder and run `gulp`. This compiles you SASS files into CSS and will watch for any changes and recompile on save. 
 2. Open a new terminal window, navigate to the project folder and run `npm start`. This should start react and you should be able to access the project locally at http://localhost:3000/.
 
 ## Compiling for production
-1. In the terminal, run this command `npm run deploy`. This command pushes your built file to the `gh-pagesbranch` on your remote repository.
+Navigate to the project folder and run `npm run build`. This will compile the product for production. The build folder is now ready to be deployed.
+
+OR 
+
+In the terminal, run this command `npm run deploy`. This command pushes your built file to the `gh-pagesbranch` on your remote repository.
 
 ## Project File Structure
 1. Everything in the `api` folder is for the product data API. 

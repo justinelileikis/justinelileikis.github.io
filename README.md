@@ -4,6 +4,7 @@
 1. [Installing Dependencies](#installing-dependencies)
 2. [Compiling for development](#compiling-for-development)
 3. [Compiling for production](#compiling-for-production)
+3. [Deploying to github pages](#deploying-to-github-pages)
 4. [Project File Structure](#project-file-structure)
 
 ## Installing Dependencies
@@ -21,9 +22,8 @@ That will install gulp locally for your project, and create the folder `node_mod
 ## Compiling for production
 Navigate to the project folder and run `npm run build`. This will compile the product for production. The build folder is now ready to be deployed.
 
-OR 
-
-In the terminal, run this command `npm run deploy`. This command pushes your built file to the `gh-pagesbranch` on your remote repository.
+## Deploying to github pages
+In the terminal, run this command `npm run deploy`. This command pushes your built file to the `master` on your remote repository.
 
 ## Project File Structure
 1. Everything in the `api` folder is for the product data API. 

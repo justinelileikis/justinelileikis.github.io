@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+/* ======================= Colours ======================== */
+
+$primary-1: #e4b854;
+$primary-1: #ad3496;
+$primary-2: #1c4469;
+$primary-3: #4545b1;
+$primary-4: #495F6D;
+
+$grey-1: #231f20;
+$grey-2: #3E3B42;
+$grey-3: #6A686E;
+$grey-4: #ABA8B0;
+$grey-5: #eeeeee;
+$grey-6: #f4f4f4;
+$grey-7: #fafafa;
+
+$primary-bg-color: #FFF;
+$secondary-bg-color: #f9f9f9;
+$tertiary-bg-color: $grey-6;
+$quaternary-bg-color: $grey-7;
+
+$border-color: $quaternary-bg-color;
+$border-color-2: $quaternary-bg-color;
+
+$error-color: #B11414;
+$body-bg-color: #fff;
+
+/* ====================== Misc ======================== */
+
+//Default box shadaw
+$box-shadow: 1px 1px 1px $grey-2;
+
+//Default border radius
+$border-radius: 0px;
+
+/* ======================= Links/Type ======================== */
+
+//Links
+$link-color: $primary-3;
+$link-hover-color: $grey-4;
+
+//Secondary link color
+$link-color-secondary: #fff;
+$link-hover-color-secondary: darken(#fff, 5%);
+
+
+//Type
+$heading-font: 'Karla', sans-serif;
+$heading-font-weight: 700;
+$heading-color: $grey-1;
+$heading-color-secondary: $grey-3;
+
+$body-font: 'Nunito Sans', sans-serif;
+$body-font-weight: 400;
+$body-font-weight-bold: 700;
+
+
+$text-color: $grey-2;
+$text-color-light: $grey-3;
+$text-color-dark: $grey-1;
+
+$heading-link-color: $grey-1;
+$heading-hover-color: $grey-1;
+
+$base-font-size: 17px;
+$base-line-height: 1.4em;
+
+/* ======================= Buttons ======================== */
+
+$btn-font-size: 18px;
+$btn-line-height: 18px;
+$btn-padding: 15px 30px;
+$btn-text-align: center;
+$btn-border-radius: 3px;
+$btn-font-family: $body-font;
+
+//Small button
+$btn-sm-padding: 7px 15px;
+$btn-sm-font-size: 14px;
+$btn-sm-line-height: 14px;
+
+//Large button
+$btn-lg-padding: 16px 25px;
+$btn-lg-font-size: 16px;
+$btn-lg-line-height: 16px;
+
+//Primary button
+$btn-primary-bg: $primary-2;
+$btn-primary-border: $primary-2;
+$btn-primary-color: #fff;
+
+$btn-primary-hover-bg: $primary-1;
+$btn-primary-hover-border: $primary-1;
+$btn-primary-hover-color: #fff;
+
+$btn-primary-active-bg: $primary-2;
+$btn-primary-active-border: $primary-2;
+$btn-primary-active-color: #fff;
+
+//Secondary button
+$btn-secondary-bg: $primary-2;
+$btn-secondary-border: $primary-2;
+$btn-secondary-color: #fff;
+
+$btn-secondary-hover-bg: darken($primary-2, 10%);
+$btn-secondary-hover-border: darken($primary-2, 10%);
+$btn-secondary-hover-color: #fff;
+
+$btn-secondary-active-bg: $primary-1;
+$btn-secondary-active-border: $primary-1;
+$btn-secondary-active-color: #fff;
+
+
+//Disabled button
+$btn-disabled-bg: $grey-4;
+$btn-disabled-border: $grey-4;
+$btn-disabled-color: #fff;
+
+
+/* ======================= Defaults ======================== */
+
+//Default box-sizing
+$box-sizing: border-box;
+
+//Default transitions
+$transition1-default: all 0.1s ease-in;
+$transition2-default: all 0.3s ease-in;
+$transition3-default: all 0.7s ease-in;
+
+/* ======================= Responsive ======================== */
+
+//Repsonsive breakpoints
+$min-break-desktop: 1101px;
+$max-break-desktop: 1100px;
+
+$min-break-tablet: 921px;
+$max-break-tablet: 920px;
+
+$min-break-mobile: 521px;
+$max-break-mobile: 520px;
+
+//Grid system variables
+$gutter: 10px;
+$sm-gutter: 5px;
+$lg-gutter: 15px;
+
+
+

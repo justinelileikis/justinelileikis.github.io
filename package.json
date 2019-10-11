@@ -1,0 +1,52 @@
+{
+  "name": "justine-lileikis",
+  "homepage": "http://review.153-018-002.git.resolutionim.com/",
+  "version": "1.0.0",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gh-pages": "^2.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "0.0.5",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.5",
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "3M Personal Safety Division Web Application",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "history": "^4.6.3",
+    "jquery": "^3.2.1",
+    "react": "15.5.3",
+    "react-dom": "15.5.3",
+    "react-router-dom": "4.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resim/153-018-3M-psd-web-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/resim/153-018-3M-psd-web-app/issues"
+  }
+}

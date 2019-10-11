@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Global Header
+   ========================================================================== */
+
+header{
+	position: absolute !important;
+	top: 0;
+	z-index: 10;
+	padding: 0;
+	width: 100%;
+	ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		float: right;
+		li{
+			padding: 20px 10px;
+			margin-left: 20px;
+			float: left;
+			display: block;
+			a{
+				position: relative;
+				border-bottom: 2px solid transparent;
+				font-family: $heading-font;
+				color: $grey-2;
+				display: block;
+				text-align: center;
+				width: 100%;
+				padding: 0 2px;
+				font-size: 15px;
+				text-decoration: none;
+				font-weight: 900;
+				&:hover, &:active, &:focus{
+					color: $primary-3;
+				}
+			}
+		}
+	}
+}
+
+body.home{
+	header li a.home{
+		color: $primary-1;
+		border-bottom: 2px solid $primary-1;
+	}
+}
+
+body.work{
+	header li a.work{
+		color: $primary-1;
+		border-bottom: 2px solid $primary-1;
+	}
+}

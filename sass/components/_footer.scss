@@ -5,15 +5,11 @@
 ul.g-connect{
 	list-style-type: none;
 	padding: 0;
-	margin: 10px 0 0 0;
+	margin: 0 0 10px 0;
 	li{
 		margin: 0;
 		padding: 0;
 		display: inline-block;
-		@media (max-width: $max-break-mobile) {
-			display: block;
-			margin-bottom: 15px;
-		}
 		a{
 			padding: 3px 5px;
 			text-decoration: none;
@@ -24,6 +20,7 @@ ul.g-connect{
 			background-size: 200% 200%;
 			background-position: top;
 			transition: all 100ms linear;
+			color: $grey-3;
 			i{
 				display: inline-block;
 				color: $primary-3;

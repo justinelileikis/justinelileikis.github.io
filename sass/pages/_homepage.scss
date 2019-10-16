@@ -7,7 +7,7 @@ html, body, .main, .page, .animated{
 
 .g-profile{
 	height: 100%;
-	width: 30%;
+	width: 450px;
 	position: absolute;
 	top: 0;
 	.g-profile-img{
@@ -20,11 +20,13 @@ html, body, .main, .page, .animated{
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
+	@media (max-width: $max-break-tablet) {
+		display: none;
+	}
 }
 
 .g-profile-copy-container{
-	width: 70%;
-	left: 30%;
+	left: 450px;
 	height: 100%;
 	position: absolute;
 	.g-profile-copy{
@@ -33,5 +35,9 @@ html, body, .main, .page, .animated{
 		p{
 			max-width: 560px;
 		}
+	}
+	@media (max-width: $max-break-tablet) {
+		width: 100%;
+		left: 0;
 	}
 }

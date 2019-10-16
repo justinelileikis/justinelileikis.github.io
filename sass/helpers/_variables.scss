@@ -5,7 +5,7 @@
 /* ======================= Colours ======================== */
 
 $primary-1: #e4b854;
-$primary-1: #ad3496;
+$primary-1: #789da4;
 $primary-2: #1c4469;
 $primary-3: #4545b1;
 $primary-4: #495F6D;
@@ -50,24 +50,23 @@ $link-hover-color-secondary: darken(#fff, 5%);
 
 //Type
 $heading-font: 'Karla', sans-serif;
-$heading-font-weight: 700;
-$heading-color: $grey-1;
+$heading-font-weight: 400;
+$heading-color: $grey-4;
 $heading-color-secondary: $grey-3;
 
-$body-font: 'Nunito Sans', sans-serif;
+$body-font: 'Karla', sans-serif;
 $body-font-weight: 400;
 $body-font-weight-bold: 700;
 
-
-$text-color: $grey-2;
-$text-color-light: $grey-3;
+$text-color: $grey-3;
+$text-color-light: $grey-4;
 $text-color-dark: $grey-1;
 
 $heading-link-color: $grey-1;
 $heading-hover-color: $grey-1;
 
-$base-font-size: 17px;
-$base-line-height: 1.4em;
+$base-font-size: 16px;
+$base-line-height: 1.6em;
 
 /* ======================= Buttons ======================== */
 
@@ -144,7 +143,7 @@ $min-break-mobile: 521px;
 $max-break-mobile: 520px;
 
 //Grid system variables
-$gutter: 10px;
+$gutter: 8px;
 $sm-gutter: 5px;
 $lg-gutter: 15px;
 

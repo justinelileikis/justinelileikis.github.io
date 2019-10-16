@@ -1,13 +1,21 @@
 import React from 'react'
 import api from '../api'
 import { Link } from 'react-router-dom'
-import createHistory from 'history/createBrowserHistory'
-const history = createHistory()
+import { createBrowserHistory } from 'history'
+const history = createBrowserHistory()
 
-class Single extends React.Component {
+class Projects extends React.Component {
 
     constructor(props) {
         super(props)
+        this.category = this.getUrlParameter('category', props.location.search)
+        this.state = {
+            category: this.category
+        }
+        this.changeCategory = this.changeCategory.bind(this) 
+    }
+
+    componentWillReceiveProps(props) {
         this.category = this.getUrlParameter('category', props.location.search)
         this.state = {
             category: this.category
@@ -42,18 +50,18 @@ class Single extends React.Component {
         return (
             <div className="animated fadeIn g-container-lg g-section-container g-section-container-first">
                 <h1>Selected work</h1>
-                <div className="g-text-color-light2 g-margin-bottom">
+                <div className="g-text-color-light2 g-margin-top-sm">
                 {
                     api.allCategories().map(p => (
-                        <a onClick={(e) =>this.changeCategory(p.url)} className="g-tag" key={p.url}>#{p.name}</a>
+                        <a onClick={(e) =>this.changeCategory(p.url)} className={ category == p.url ? 'g-tag g-active' : 'g-tag' } key={p.url}>{p.name}</a>
                     ))
                 }
-                    <a onClick={(e) =>this.clearCategory()} className="g-tag">view all</a>
+                    <a onClick={(e) =>this.clearCategory()} className={ category == null ? 'g-tag g-active' : 'g-tag' }>view all</a>
                 </div>
                 <div className="row margin-bottom g-margin-top">
                 {
                     api.getProjects(category).map((p, index) => (
-                        <div className="col-1of4 sm-1of2">
+                        <div className="col-1of4 sm-1of2 xs-1of2" key={p.url}>
                             <div className="animated fadeIn g-featured" style={{ backgroundImage: `url(${p.image})`, animationDelay: `${index}`+'00ms' }}>
                                 <Link className="g-featured-link" to={p.url}></Link>
                                 <div className="g-text">
@@ -69,4 +77,4 @@ class Single extends React.Component {
     }
 }
 
-export default Single;
+export default Projects;

@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 const api = {
     categories: [{
             url: "websites",
@@ -7,11 +5,11 @@ const api = {
         },
         {
             url: "designsystems",
-            name: "designsystems"
+            name: "design systems"
         },
         {
             url: "webapplications",
-            name: "webapplications"
+            name: "web applications"
         }
     ],
     projects: [{
@@ -79,6 +77,15 @@ const api = {
             role: 'Development',
             webapplications: true,
             designsystems: true,
+            toolkit: [{
+                    name: 'React',
+                    url: 'https://reactjs.org/'
+                },
+                {
+                    name: 'Slim',
+                    url: 'http://www.slimframework.com/'
+                }
+            ],
             images: [{
                     src: 'img/work/safety/4.png'
                 },
@@ -109,6 +116,11 @@ const api = {
             image: 'img/work/jaws/1.png',
             role: 'Development',
             websites: true,
+            toolkit: [{
+                    name: 'Wordpress',
+                    url: 'https://wordpress.org/'
+                }
+            ],
             images: [{
                     src: 'img/work/jaws/1.png'
                 },
@@ -144,7 +156,7 @@ const api = {
             text: 'UX research, usability testing, and digital product design to help clients discover and capitalize on new ideas.',
             image: 'img/work/resim/1.png',
             role: 'Development',
-            url: 'https://res.im',
+            live: 'https://res.im',
             websites: true,
             images: [{
                     src: 'img/work/resim/1.png'
@@ -178,7 +190,7 @@ const api = {
             text: 'PrecedentJD is home to everything law students to kick-start their legal careers — from how to ace their interviews, dress the part and get hired back.',
             image: 'img/work/student/1.png',
             role: 'Development',
-            url: 'https://precedentjd.com/',
+            live: 'https://precedentjd.com/',
             websites: true,
             images: [{
                     src: 'img/work/student/1.png'
@@ -204,7 +216,7 @@ const api = {
             image: 'img/work/durham/1.png',
             case: 'https://res.im/work/durham-college/',
             role: 'Front-end development',
-            url: 'https://durhamcollege.ca/',
+            live: 'https://durhamcollege.ca/',
             websites: true,
             designsystems: true,
             images: [{
@@ -267,16 +279,14 @@ const api = {
     },
     getProjects: function(cat) {
         if (cat) {
-            return this.projects.filter(item => item[cat] == true);
+            return this.projects.filter(item => item[cat] === true);
         } else {
             return this.projects;
         }
     },
-    getProject: function(id) {
-
-    },
-
-
+    getProject: function(url) {
+        return this.projects.filter(item => item['url'] === url);
+    }
 }
 
 export default api

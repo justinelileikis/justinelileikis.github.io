@@ -62,7 +62,7 @@ class Projects extends React.Component {
                 {
                     api.getProjects(category).map((p, index) => (
                         <div className="col-1of4 sm-1of2 xs-1of2" key={p.url}>
-                            <div className="animated fadeIn g-featured" style={{ backgroundImage: `url(${p.image})`, animationDelay: `${index}`+'00ms' }}>
+                            <div className="animated fadeIn g-featured" style={{ backgroundImage: `url(/img/work/${p.class}/${p.class}.png)`, animationDelay: `${index}`+'00ms' }}>
                                 <Link className="g-featured-link" to={p.url}></Link>
                                 <div className="g-text">
                                     <h2>View project</h2>

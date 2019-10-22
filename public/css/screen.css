@@ -3194,7 +3194,7 @@ html {
 body {
   font-family: "Karla", sans-serif;
   color: #6A686E;
-  background-color: #fff;
+  background-color: #fcfcfc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
@@ -3535,6 +3535,94 @@ body.work header li a.work {
 
 .slick-dots li.slick-active button:before {
   opacity: .75;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 30px;
+  line-height: 1;
+  opacity: .75;
+  color: #231f20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+[dir='rtl'] .slick-prev {
+  right: 20px;
+  left: auto;
+}
+
+.slick-prev:before {
+  content: "\f359";
+}
+
+[dir='rtl'] .slick-prev:before {
+  content: "\f35a";
+}
+
+.slick-next {
+  right: 20px;
+}
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: 20px;
+}
+
+.slick-next:before {
+  content: "\f35a";
+}
+
+[dir='rtl'] .slick-next:before {
+  content: "\f359";
 }
 
 /* ==========================================================================
@@ -4180,13 +4268,13 @@ h6 {
 }
 
 .g-section-container {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (max-width: 520px) {
   .g-section-container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -4247,8 +4335,8 @@ html, body, .main, .page, .animated {
    Work page Specific Styles
    ========================================================================== */
 .g-featured {
-  background-size: 140%;
-  background-position: 50% 35%;
+  background-size: cover;
+  background-position: top center;
   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.3);
   position: relative;
   transform: scale(1);

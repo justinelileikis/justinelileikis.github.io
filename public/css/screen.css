@@ -3031,7 +3031,7 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 }
 
 .g-bg-color-tertiary {
-  background-color: #f4f4f4;
+  background-color: #dae7e9;
 }
 
 .g-bg-color-quaternary {
@@ -3297,21 +3297,17 @@ img {
 .g-tag {
   font-size: 13px;
   line-height: 16px;
-  border: 1px solid #eeeeee;
-  background-color: #fafafa;
-  border-radius: 3px;
   display: inline-block;
   padding: 4px 8px;
   margin: 0 10px 0 0;
+  color: #3E3B42;
+  border-bottom: 2px solid transparent;
 }
-.g-tag:hover, .g-tag:focus {
-  background-color: #eeeef8;
-  color: #4545b1;
+.g-tag:hover, .g-tag:focus, .g-tag:active {
+  color: #789da4;
 }
 .g-tag.g-active {
-  background-color: #eeeef8;
   color: #4545b1;
-  border: 1px solid rgba(69, 69, 177, 0.4);
 }
 
 /* ==========================================================================
@@ -3400,7 +3396,7 @@ ul.g-connect li a {
   margin-right: 20px;
   font-size: 14px;
   font-weight: bold;
-  background: linear-gradient(to bottom, #fff 50%, #eeeef8 50%);
+  background: linear-gradient(to bottom, transparent 50%, #eeeef8 50%);
   background-size: 200% 200%;
   background-position: top;
   transition: all 100ms linear;
@@ -3572,7 +3568,7 @@ body.work header li a.work {
 .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
-  opacity: 1;
+  opacity: .8;
 }
 
 .slick-prev.slick-disabled:before,
@@ -3583,46 +3579,47 @@ body.work header li a.work {
 .slick-prev:before,
 .slick-next:before {
   font-family: "Font Awesome 5 Free";
-  font-size: 30px;
+  font-size: 100px;
   line-height: 1;
-  opacity: .75;
+  font-weight: 900;
+  opacity: .3;
   color: #231f20;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-  left: 20px;
+  left: -30px;
 }
 
 [dir='rtl'] .slick-prev {
-  right: 20px;
+  right: -30px;
   left: auto;
 }
 
 .slick-prev:before {
-  content: "\f359";
+  content: "\f053";
 }
 
 [dir='rtl'] .slick-prev:before {
-  content: "\f35a";
+  content: "\f054";
 }
 
 .slick-next {
-  right: 20px;
+  right: -30px;
 }
 
 [dir='rtl'] .slick-next {
   right: auto;
-  left: 20px;
+  left: -30px;
 }
 
 .slick-next:before {
-  content: "\f35a";
+  content: "\f054";
 }
 
 [dir='rtl'] .slick-next:before {
-  content: "\f359";
+  content: "\f053";
 }
 
 /* ==========================================================================
@@ -3650,7 +3647,7 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 h1 {
   margin-top: 0;
   padding-top: 1em;
-  font-size: 4em;
+  font-size: 3em;
   color: #789da4;
   line-height: 1em;
 }
@@ -4235,12 +4232,12 @@ h6 {
 }
 @media (min-width: 1000px) {
   .g-container-lg {
-    width: 970px;
+    width: 950px;
   }
 }
 @media (min-width: 1200px) {
   .g-container-lg {
-    width: 1150px;
+    width: 1050px;
   }
 }
 

@@ -59,14 +59,14 @@ class Single extends React.Component {
                         </div>
                          <div className="row">
                             <div className="col-1of4">
-                                <p className="g-font-size-largest g-margin-top">Role</p>
+                                <p className="g-font-size-largest g-margin-top-sm">Role</p>
                                 <p>{project.role}</p>
                             </div>
                             <div className="col-3of4">
                             { 
                                 project.toolkit &&
                                 <div>
-                                    <p className="g-font-size-largest g-margin-top">Dev toolkit</p>
+                                    <p className="g-font-size-largest g-margin-top-sm">Dev toolkit</p>
                                     <ul className="g-list-inline">
                                         { 
                                             project['toolkit'].map((p, index) => (
@@ -80,8 +80,8 @@ class Single extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="g-section-container" style={{backgroundColor:'#0b1730'}}>
-                    <div className="g-container"> 
+                <div className="g-section-container g-bg-color-tertiary">
+                    <div className="g-container-lg"> 
                         <Slider {...settings}>
                         { 
                             Array.from({length: project['images']}, (item, index) => 

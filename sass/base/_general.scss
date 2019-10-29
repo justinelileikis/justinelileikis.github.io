@@ -139,20 +139,16 @@ img{
 .g-tag{
   font-size: 13px;
   line-height: 16px;
-  border: 1px solid $grey-5;
-  background-color: $grey-7;
-  border-radius: 3px;
   display: inline-block;
   padding: 4px 8px;
   margin: 0 10px 0 0;
-  &:hover, &:focus{
-    background-color: lighten($primary-3, 47%);
-    color: $primary-3;
+  color: $grey-2;
+  border-bottom: 2px solid transparent;
+  &:hover, &:focus, &:active{
+    color: $primary-1;
   }
   &.g-active{
-    background-color: lighten($primary-3, 47%);
     color: $primary-3;
-    border: 1px solid rgba(69, 69, 177, 0.4);
   }
 }
 

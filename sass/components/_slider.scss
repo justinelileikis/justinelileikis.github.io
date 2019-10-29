@@ -129,7 +129,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before
 {
-    opacity: 1;
+    opacity: .8;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -141,10 +141,11 @@
 .slick-next:before
 {
     font-family: "Font Awesome 5 Free";
-    font-size: 30px;
+    font-size: 100px;
     line-height: 1;
+    font-weight: 900;
 
-    opacity: .75;
+    opacity: .3;
     color: $grey-1;
 
     -webkit-font-smoothing: antialiased;
@@ -153,38 +154,38 @@
 
 .slick-prev
 {
-    left: 20px;
+    left: -30px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 20px;
+    right: -30px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: "\f359";
+    content: "\f053";
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: "\f35a";
+    content: "\f054";
 }
 
 .slick-next
 {
-    right: 20px;
+    right: -30px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: 20px;
+    left: -30px;
 }
 .slick-next:before
 {
-    content: "\f35a";
+    content: "\f054";
 }
 [dir='rtl'] .slick-next:before
 {
-    content: "\f359";
+    content: "\f053";
 }
 
 // Customizations

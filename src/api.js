@@ -1,15 +1,15 @@
 const api = {
     categories: [{
             url: "websites",
-            name: "websites"
+            name: "Websites"
         },
         {
             url: "designsystems",
-            name: "design systems"
+            name: "Design systems"
         },
         {
             url: "webapplications",
-            name: "web applications"
+            name: "Web applications"
         }
     ],
     projects: [{
@@ -21,7 +21,7 @@ const api = {
             role: 'Front-end development',
             live: 'https://www.sait.ca/',
             websites: true,
-            images: 6,
+            images: 13,
             color: '#0b1730',
             toolkit: [{
                     name: 'Motion UI',
@@ -52,7 +52,7 @@ const api = {
             class: 'safety',
             role: 'Full stack development',
             webapplications: true,
-            images: 6,
+            images: 5,
             toolkit: [{
                     name: 'React',
                     url: 'https://reactjs.org/'
@@ -70,13 +70,13 @@ const api = {
             class: 'jaws',
             role: 'Full stack development',
             websites: true,
-            image: 6,
+            images: 10,
             toolkit: [{
                     name: 'WordPress',
                     url: 'https://wordpress.org/',
                 },
                 {
-                    name: 'Leanmodal',
+                    name: 'LeanModal',
                     url: 'http://leanmodal.finelysliced.com.au/',
                 },
                 {
@@ -127,7 +127,7 @@ const api = {
             class: 'pdf',
             role: 'Full stack development',
             webapplications: true,
-            images: 5,
+            images: 6,
             toolkit: [{
                     name: 'Angular',
                     url: 'https://angular.io/'
@@ -163,7 +163,7 @@ const api = {
             role: 'Full stack development',
             live: 'https://precedentjd.com/',
             websites: true,
-            images: 7,
+            images: 4,
             toolkit: [{
                     name: 'WordPress',
                     url: 'https://wordpress.org/',
@@ -180,7 +180,7 @@ const api = {
             live: 'https://durhamcollege.ca/',
             websites: true,
             designsystems: true,
-            images: 9,
+            images: 8,
             toolkit: [{
                     name: 'Foundation',
                     url: 'https://foundation.zurb.com/sites/docs/',
@@ -201,7 +201,7 @@ const api = {
             role: 'Full stack development',
             websites: true,
             designsystems: true,
-            images: 5,
+            images: 7,
             toolkit: [{
                     name: 'Bootstrap',
                     url: 'https://getbootstrap.com/',

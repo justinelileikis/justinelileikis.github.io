@@ -141,8 +141,8 @@ img{
   line-height: 16px;
   display: inline-block;
   padding: 4px 8px;
-  margin: 0 10px 0 0;
-  color: $grey-2;
+  margin: 0 5px;
+  color: $grey-1;
   border-bottom: 2px solid transparent;
   &:hover, &:focus, &:active{
     color: $primary-1;
@@ -150,5 +150,14 @@ img{
   &.g-active{
     color: $primary-3;
   }
+}
+
+.g-dot{
+  width: 5px;
+  height: 5px;
+  background-color: lighten($primary-1, 10%);
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1px;
 }
 

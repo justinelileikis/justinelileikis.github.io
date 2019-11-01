@@ -1302,7 +1302,7 @@
 }
 
 .g-text-color-primary {
-  color: #6A686E;
+  color: #3E3B42;
 }
 
 .g-text-color-light {
@@ -1540,7 +1540,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
-  color: #6A686E;
+  color: #3E3B42;
   background-color: #fcfcfc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1646,8 +1646,8 @@ img {
   line-height: 16px;
   display: inline-block;
   padding: 4px 8px;
-  margin: 0 10px 0 0;
-  color: #3E3B42;
+  margin: 0 5px;
+  color: #231f20;
   border-bottom: 2px solid transparent;
 }
 .g-tag:hover, .g-tag:focus, .g-tag:active {
@@ -1655,6 +1655,15 @@ img {
 }
 .g-tag.g-active {
   color: #4545b1;
+}
+
+.g-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #96b3b9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1px;
 }
 
 /* ==========================================================================
@@ -1972,7 +1981,7 @@ body.work header li a.work {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Karla", sans-serif;
-  color: #ABA8B0;
+  color: #231f20;
   font-weight: 400;
   line-height: 1.1em;
   margin: 1em 0 0.1em;
@@ -2727,6 +2736,11 @@ html, body, .main, .page, .animated {
 }
 .g-featured:hover .g-text h2 {
   top: 50%;
+}
+
+.single .g-section-container-first {
+  background-position: center center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=screen.css.map */

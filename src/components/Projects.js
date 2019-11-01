@@ -55,11 +55,11 @@ class Projects extends React.Component {
                     api.allCategories().map(p => (
                     <span>
                         <a onClick={(e) =>this.changeCategory(p.url)} className={ category == p.url ? 'g-tag g-active' : 'g-tag' } key={p.url}>{p.name}</a>
-                        <span aria-hidden="true">&#8226;</span>
+                        <span className="g-dot"></span>
                     </span>
                     ))
                 }
-                    <a onClick={(e) =>this.clearCategory()} className={ category == null ? 'g-tag g-active' : 'g-tag' }>view all</a>
+                    <a onClick={(e) =>this.clearCategory()} className={ category == null ? 'g-tag g-active' : 'g-tag' }>View all</a>
                 </div>
                 <div className="row margin-bottom g-margin-top">
                 {

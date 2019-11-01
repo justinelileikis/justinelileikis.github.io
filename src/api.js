@@ -14,7 +14,7 @@ const api = {
     ],
     projects: [{
             url: 'sait',
-            title: 'SAIT',
+            title: 'The Southern Alberta Institute of Technology',
             text: 'SAIT is Alberta’s third-largest post-secondary institution, educating approximately 50,000 students per year globally with an emphasis on applied education and research.',
             class: 'sait',
             case: 'https://res.im/work/sait/',
@@ -122,7 +122,7 @@ const api = {
         },
         {
             url: '3M-pdf-catalogue-creator',
-            title: '3M PDF Catalogue Creator',
+            title: '3M Medical Solution Division',
             text: 'Find and edit product data, add products to your custom catalogues to create a professional PDF to share with clients.',
             class: 'pdf',
             role: 'Full stack development',

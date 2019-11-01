@@ -20,22 +20,27 @@ class Single extends React.Component {
         }
     }
 
+    componentDidMount() {
+        //preload first slider image
+        new Image().src = '/img/work/'+this.project[0].class+'/1.png';
+    }
+
     render() {
 
     	const project = this.state.project[0]
         const settings = {
-          dots: true,
-          infinite: true,
-          fade: true,
-          arrow: true,
-          speed: 1,
-          slidesToShow: 1,
-          slidesToScroll: 1
+            dots: true,
+            infinite: true,
+            fade: true,
+            arrow: true,
+            speed: 1,
+            slidesToShow: 1,
+            slidesToScroll: 1
         }
 
         return (
-            <div className="animated fadeIn">
-                <div className="g-section-container g-section-container-first">
+            <div className="animated fadeIn single">
+                <div className="g-section-container g-section-container-first" style={{backgroundImage: 'url(/img/work/'+project.class+'/'+project.class+'-bg.png)'}}>
     	            <div className="g-container">
     	                <h1>{project.title}</h1>
                         <ul className="g-connect">
@@ -91,9 +96,17 @@ class Single extends React.Component {
                         </Slider>
                     </div>
                 </div>
-                <div className="g-section-container g-section-container-first">
-                    <a>Next</a>
-                    <a>Previous</a>
+                <div className="g-section-container">
+                    <div className="g-container-lg"> 
+                        <div className="row">
+                            <div className="col-1of2 sm-1of2 xs-1of2">
+                                <a><i className="fas fa-arrow-left" aria-hidden="true"></i> Previous</a>
+                            </div>
+                            <div className="col-1of2 g-text-right">
+                                <a>Next <i className="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

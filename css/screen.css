@@ -2935,7 +2935,7 @@
 }
 
 .g-text-color-primary {
-  color: #6A686E;
+  color: #3E3B42;
 }
 
 .g-text-color-light {
@@ -3031,7 +3031,7 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 }
 
 .g-bg-color-tertiary {
-  background-color: #f4f4f4;
+  background-color: #dae7e9;
 }
 
 .g-bg-color-quaternary {
@@ -3193,8 +3193,8 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
-  color: #6A686E;
-  background-color: #fff;
+  color: #3E3B42;
+  background-color: #fcfcfc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
@@ -3295,23 +3295,26 @@ img {
 }
 
 .g-tag {
-  font-size: 13px;
-  line-height: 16px;
-  border: 1px solid #eeeeee;
-  background-color: #fafafa;
-  border-radius: 3px;
   display: inline-block;
   padding: 4px 8px;
-  margin: 0 10px 0 0;
+  margin: 0 5px;
+  color: #231f20;
+  border-bottom: 2px solid transparent;
 }
-.g-tag:hover, .g-tag:focus {
-  background-color: #eeeef8;
-  color: #4545b1;
+.g-tag:hover, .g-tag:focus, .g-tag:active {
+  color: #789da4;
 }
 .g-tag.g-active {
-  background-color: #eeeef8;
   color: #4545b1;
-  border: 1px solid rgba(69, 69, 177, 0.4);
+}
+
+.g-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #96b3b9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1px;
 }
 
 /* ==========================================================================
@@ -3400,7 +3403,7 @@ ul.g-connect li a {
   margin-right: 20px;
   font-size: 14px;
   font-weight: bold;
-  background: linear-gradient(to bottom, #fff 50%, #eeeef8 50%);
+  background: linear-gradient(to bottom, transparent 50%, #eeeef8 50%);
   background-size: 200% 200%;
   background-position: top;
   transition: all 100ms linear;
@@ -3449,7 +3452,6 @@ header ul li a {
   text-align: center;
   width: 100%;
   padding: 0 2px;
-  font-size: 15px;
   text-decoration: none;
   font-weight: 900;
 }
@@ -3572,7 +3574,7 @@ body.work header li a.work {
 .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
-  opacity: 1;
+  opacity: .8;
 }
 
 .slick-prev.slick-disabled:before,
@@ -3583,51 +3585,47 @@ body.work header li a.work {
 .slick-prev:before,
 .slick-next:before {
   font-family: "Font Awesome 5 Free";
-  font-size: 30px;
+  font-size: 100px;
   line-height: 1;
-  opacity: .75;
+  font-weight: 900;
+  opacity: .3;
   color: #231f20;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-  left: 20px;
+  left: -30px;
 }
 
 [dir='rtl'] .slick-prev {
-  right: 20px;
+  right: -30px;
   left: auto;
 }
 
 .slick-prev:before {
-  content: "\f359";
+  content: "\f053";
 }
 
 [dir='rtl'] .slick-prev:before {
-  content: "\f35a";
+  content: "\f054";
 }
 
 .slick-next {
-  right: 20px;
+  right: -30px;
 }
 
 [dir='rtl'] .slick-next {
   right: auto;
-  left: 20px;
+  left: -30px;
 }
 
 .slick-next:before {
-  content: "\f35a";
+  content: "\f054";
 }
 
 [dir='rtl'] .slick-next:before {
-  content: "\f359";
-}
-
-.slick-slider {
-  width: 120%;
-  left: -5%;
+  content: "\f053";
 }
 
 /* ==========================================================================
@@ -3635,7 +3633,7 @@ body.work header li a.work {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Karla", sans-serif;
-  color: #ABA8B0;
+  color: #231f20;
   font-weight: 400;
   line-height: 1.1em;
   margin: 1em 0 0.1em;
@@ -3655,7 +3653,7 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 h1 {
   margin-top: 0;
   padding-top: 1em;
-  font-size: 4em;
+  font-size: 3em;
   color: #789da4;
   line-height: 1em;
 }
@@ -4240,12 +4238,12 @@ h6 {
 }
 @media (min-width: 1000px) {
   .g-container-lg {
-    width: 970px;
+    width: 950px;
   }
 }
 @media (min-width: 1200px) {
   .g-container-lg {
-    width: 1150px;
+    width: 1050px;
   }
 }
 
@@ -4273,13 +4271,13 @@ h6 {
 }
 
 .g-section-container {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (max-width: 520px) {
   .g-section-container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -4340,8 +4338,8 @@ html, body, .main, .page, .animated {
    Work page Specific Styles
    ========================================================================== */
 .g-featured {
-  background-size: 140%;
-  background-position: 50% 35%;
+  background-size: cover;
+  background-position: top center;
   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.3);
   position: relative;
   transform: scale(1);
@@ -4389,4 +4387,9 @@ html, body, .main, .page, .animated {
 }
 .g-featured:hover .g-text h2 {
   top: 50%;
+}
+
+.single .g-section-container-first {
+  background-position: center center;
+  background-size: cover;
 }

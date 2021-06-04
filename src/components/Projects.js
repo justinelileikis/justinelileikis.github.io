@@ -34,7 +34,7 @@ class Projects extends React.Component {
     history.push('/projects?category=' + category)
     this.setState({category: 'reset'});
     setTimeout(() => {
-      this.setState({category: category});
+      this.setState({category: category})
     }, 300);
   }
 

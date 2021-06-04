@@ -7,9 +7,9 @@ import Single from './Single'
 const Main = () => (
   <main>
     <Switch>
-		<Route exact path='/' component={Home}/>
-		<Route path='/projects' component={Projects}/>
-		<Route path='/:url' component={Single}/>
+      <Route exact path='/' component={Home}/>
+      <Route path='/projects' component={Projects}/>
+      <Route path='/:url' component={Single}/>
     </Switch>
   </main>
 )

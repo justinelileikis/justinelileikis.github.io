@@ -12,6 +12,6 @@ const Main = () => (
       <Route path='/:url' component={Single}/>
     </Switch>
   </main>
-)
+);
 
 export default Main

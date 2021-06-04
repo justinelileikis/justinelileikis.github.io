@@ -5,16 +5,16 @@
 //work page samples
 .g-featured{
 	@extend .transition;
-  background-size: cover;
-  background-position: top center;
+	background-size: cover;
+	background-position: top center;
 	box-shadow: 1px 1px 30px rgba(0,0,0,.3);
 	position: relative;
 	@extend .transition;
 	transform: scale(1);
 	&:after{
 		content: "";
-    display: block;
-    padding-bottom: 64%;
+    	display: block;
+    	padding-bottom: 64%;
 	}
 	.g-text{
 		@extend .transition;
@@ -37,25 +37,23 @@
 	h2{
 		@extend .transition2;
 		font-size: 15px;
-    line-height: 17px;
-    margin: 0px auto;
-    top: 100%;
-    margin-top: -40px;
-    left: 0;
-    right: 0;
-    padding-top: 20px;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #4545b1;
-    color: #fff;
+		line-height: 17px;
+		top: 100%;
+		margin-top: -40px;
+		left: 0;
+		padding: 20px;
+		position: absolute;
+		width: 100%;
+		background: #4545b1;
+		color: #fff;
 	}
-	&:hover{
-		.g-text{
-			opacity: 1;
-			h2{
-				top: 50%;
+	@media (min-width: $min-break-tablet) {
+		&:hover {
+			.g-text {
+				opacity: 1;
+				h2 {
+					top: 55%;
+				}
 			}
 		}
 	}

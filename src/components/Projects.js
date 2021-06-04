@@ -2,24 +2,24 @@ import React from 'react'
 import api from '../api'
 import { Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-const history = createBrowserHistory()
+const history = createBrowserHistory();
 
 class Projects extends React.Component {
 
   constructor(props) {
-    super(props)
-    this.category = this.getUrlParameter('category', props.location.search)
+    super(props);
+    this.category = this.getUrlParameter('category', props.location.search);
     this.state = {
       category: this.category
-    }
+    };
     this.changeCategory = this.changeCategory.bind(this) 
   }
 
   componentWillReceiveProps(props) {
-    this.category = this.getUrlParameter('category', props.location.search)
+    this.category = this.getUrlParameter('category', props.location.search);
     this.state = {
       category: this.category
-    }
+    };
     this.changeCategory = this.changeCategory.bind(this) 
   }
 
@@ -31,7 +31,7 @@ class Projects extends React.Component {
   }
 
   changeCategory(category){
-    history.push('/projects?category=' + category)
+    history.push('/projects?category=' + category);
     this.setState({category: 'reset'});
     setTimeout(() => {
       this.setState({category: category})
@@ -39,14 +39,12 @@ class Projects extends React.Component {
   }
 
   clearCategory(){
-    history.push('/projects')
+    history.push('/projects');
     this.setState({category: null});
   }
 
   render() {
-
-    const category = this.state.category   
-
+    const category = this.state.category;
     return (
       <div className="animated fadeIn">
         <div className="g-container-lg">

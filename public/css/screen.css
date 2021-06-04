@@ -3628,6 +3628,18 @@ body.work header li a.work {
   content: "\f053";
 }
 
+@media (max-width: 1200px) {
+  .slick-slider .slick-arrow {
+    display: none !important;
+  }
+}
+.slick-slider.dark .slick-next:before, .slick-slider.dark .slick-prev:before {
+  color: #fff;
+}
+.slick-slider.dark .slick-dots li button:before {
+  background-color: #fff;
+}
+
 /* ==========================================================================
    Type
    ========================================================================== */
@@ -3664,6 +3676,7 @@ h1 small {
 @media (max-width: 520px) {
   h1 {
     font-size: 3em;
+    padding-top: 1em;
   }
 }
 
@@ -4304,7 +4317,7 @@ html, body, .main, .page, .animated {
 .g-profile {
   height: 100%;
   width: 450px;
-  position: absolute;
+  position: fixed;
   top: 0;
 }
 .g-profile .g-profile-img {
@@ -4317,31 +4330,32 @@ html, body, .main, .page, .animated {
   background-repeat: no-repeat;
   background-position: center center;
 }
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
   .g-profile {
     display: none;
   }
 }
 
-.g-profile-copy-container {
-  left: 450px;
-  height: 100%;
-  position: absolute;
+.g-profile-container {
+  padding: 40px 40px 40px 490px;
+  width: 100%;
 }
-.g-profile-copy-container .g-profile-copy {
+.g-profile-container .g-profile-copy {
   max-width: 860px;
-  padding: 50px;
 }
-.g-profile-copy-container .g-profile-copy p {
+.g-profile-container .g-profile-copy p {
   max-width: 660px;
 }
-@media (max-width: 920px) {
-  .g-profile-copy-container {
-    width: 100%;
-    left: 0;
-  }
-  .g-profile-copy-container .g-profile-copy {
+@media (max-width: 1000px) {
+  .g-profile-container {
     padding: 15px;
+  }
+  .g-profile-container .g-profile-copy {
+    text-align: center;
+    max-width: 100%;
+  }
+  .g-profile-container .g-profile-copy p {
+    margin: 20px auto;
   }
 }
 

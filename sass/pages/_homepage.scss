@@ -8,7 +8,7 @@ html, body, .main, .page, .animated{
 .g-profile{
 	height: 100%;
 	width: 450px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	.g-profile-img{
 		position: absolute;
@@ -20,27 +20,28 @@ html, body, .main, .page, .animated{
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
-	@media (max-width: $max-break-tablet) {
+	@media (max-width: 1000px) {
 		display: none;
 	}
 }
 
-.g-profile-copy-container{
-	left: 450px;
-	height: 100%;
-	position: absolute;
+.g-profile-container{
+	padding: 40px 40px 40px 490px;
+	width: 100%;
 	.g-profile-copy{
 		max-width: 860px;
-		padding: 50px;
 		p{
 			max-width: 660px;
 		}
 	}
-	@media (max-width: $max-break-tablet) {
-		width: 100%;
-		left: 0;
-		.g-profile-copy {
-			padding: 15px;
+	@media (max-width: 1000px) {
+		padding: 15px;
+		.g-profile-copy{
+			text-align: center;
+			max-width: 100%;
+			p{
+				margin: 20px auto;
+			}
 		}
 	}
 }

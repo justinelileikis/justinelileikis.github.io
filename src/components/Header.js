@@ -8,7 +8,6 @@ class Header extends React.Component {
                 <nav className="g-clearfix">
                     <ul>
                         <li><Link className="home" to="/">Home</Link></li>
-                        <li><Link className="work" to="/projects">Projects</Link></li>
                     </ul>
                 </nav>
             </header>

@@ -22,7 +22,7 @@ class Single extends React.Component {
 
   componentDidMount() {
     //preload first slider image
-    new Image().src = '/img/work/'+this.project[0].class+'/1.png';
+    new Image().src = '/img/work/'+this.project[0].class+'/1.png'
   }
 
   render() {

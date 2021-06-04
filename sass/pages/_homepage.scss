@@ -30,14 +30,17 @@ html, body, .main, .page, .animated{
 	height: 100%;
 	position: absolute;
 	.g-profile-copy{
-		max-width: 760px;
+		max-width: 860px;
 		padding: 50px;
 		p{
-			max-width: 560px;
+			max-width: 660px;
 		}
 	}
 	@media (max-width: $max-break-tablet) {
 		width: 100%;
 		left: 0;
+		.g-profile-copy {
+			padding: 15px;
+		}
 	}
 }

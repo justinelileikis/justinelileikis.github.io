@@ -49,12 +49,12 @@ $link-hover-color-secondary: darken(#fff, 5%);
 
 
 //Type
-$heading-font: 'Karla', sans-serif;
-$heading-font-weight: 400;
+$heading-font: 'Roboto', sans-serif;
+$heading-font-weight: 700;
 $heading-color: $grey-1;
 $heading-color-secondary: $grey-3;
 
-$body-font: 'Karla', sans-serif;
+$body-font: 'Roboto', sans-serif;
 $body-font-weight: 400;
 $body-font-weight-bold: 700;
 
@@ -65,7 +65,7 @@ $text-color-dark: $grey-1;
 $heading-link-color: $grey-1;
 $heading-hover-color: $grey-1;
 
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: 1.6em;
 
 /* ======================= Buttons ======================== */
@@ -143,9 +143,9 @@ $min-break-mobile: 521px;
 $max-break-mobile: 520px;
 
 //Grid system variables
-$gutter: 8px;
+$gutter: 12px;
 $sm-gutter: 5px;
-$lg-gutter: 15px;
+$lg-gutter: 20px;
 
 
 

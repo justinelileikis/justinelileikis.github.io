@@ -1539,12 +1539,12 @@ html {
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #3E3B42;
   background-color: #fcfcfc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6em;
   font-weight: 400;
   padding: 0;
@@ -1598,7 +1598,7 @@ a.cta {
   margin-right: 20px;
   margin-bottom: 4px;
   font-size: 16px;
-  font-family: "Karla", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a.cta:hover {
   background-color: white;
@@ -1686,7 +1686,7 @@ img {
   background-color: #1c4469;
   border: none;
   border-radius: 3px;
-  font-family: "Karla", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   background-color: #1c4469;
   text-decoration: none;
@@ -1792,7 +1792,7 @@ header ul li {
 header ul li a {
   position: relative;
   border-bottom: 2px solid transparent;
-  font-family: "Karla", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #3E3B42;
   display: block;
   text-align: center;
@@ -1977,9 +1977,9 @@ body.work header li a.work {
    Type
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Karla", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #231f20;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1em;
   margin: 1em 0 0.1em;
 }
@@ -1997,9 +1997,9 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 
 h1 {
   margin-top: 0;
-  padding-top: 1em;
-  font-size: 3em;
-  color: #789da4;
+  padding-top: .5em;
+  font-size: 6em;
+  color: #231f20;
   line-height: 1em;
 }
 h1 small {
@@ -2047,8 +2047,8 @@ h6 {
    Grid System
    ========================================================================== */
 .row {
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 .row:after {
   clear: both;
@@ -2066,13 +2066,13 @@ h6 {
 .row.margin-bottom > *[class*="col-"]:after {
   content: " ";
   width: 100%;
-  height: 16px;
+  height: 24px;
   bottom: 0;
   left: 0;
   display: block;
 }
 .row.margin-bottom > *[class*="col-"] > .row {
-  margin-bottom: -16px;
+  margin-bottom: -24px;
 }
 .row.margin-bottom-sm > *[class*="col-"] {
   position: relative;
@@ -2080,13 +2080,13 @@ h6 {
 .row.margin-bottom-sm > *[class*="col-"]:after {
   content: " ";
   width: 100%;
-  height: 8px;
+  height: 12px;
   bottom: 0;
   left: 0;
   display: block;
 }
 .row.margin-bottom-sm > *[class*="col-"] > .row {
-  margin-bottom: -8px;
+  margin-bottom: -12px;
 }
 .row.no-gutter {
   margin-left: 0;
@@ -2097,18 +2097,18 @@ h6 {
 }
 @media (min-width: 1330px) {
   .row.lg-gutter {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
   .row.lg-gutter > *[class*="col-"] {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 }
 
 .row *[class*="col-"] {
   float: left;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
   min-height: 1px;
   width: 100%;
 }
@@ -2548,8 +2548,8 @@ h6 {
    ========================================================================== */
 .g-container {
   position: relative;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2571,8 +2571,8 @@ h6 {
 
 .g-container-lg {
   position: relative;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2592,10 +2592,18 @@ h6 {
   }
 }
 
+.g-container-xlg {
+  position: relative;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .g-container-sm {
   position: relative;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2666,16 +2674,19 @@ html, body, .main, .page, .animated {
   position: absolute;
 }
 .g-profile-copy-container .g-profile-copy {
-  max-width: 760px;
+  max-width: 860px;
   padding: 50px;
 }
 .g-profile-copy-container .g-profile-copy p {
-  max-width: 560px;
+  max-width: 660px;
 }
 @media (max-width: 920px) {
   .g-profile-copy-container {
     width: 100%;
     left: 0;
+  }
+  .g-profile-copy-container .g-profile-copy {
+    padding: 15px;
   }
 }
 

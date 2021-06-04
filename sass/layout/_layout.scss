@@ -38,6 +38,15 @@
 	}
 }
 
+//largest container
+.g-container-xlg{
+	position: relative;
+	padding-right: $gutter;
+	padding-left: $gutter;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 //smaller container
 .g-container-sm{
 	position: relative;

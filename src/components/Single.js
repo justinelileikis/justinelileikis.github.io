@@ -1,7 +1,7 @@
 import React from 'react'
 import api from '../api'
 import Slider from 'react-slick'
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 class Single extends React.Component {
 
@@ -9,23 +9,34 @@ class Single extends React.Component {
     super(props);
     this.project = api.getProject(props.match.params.url);
     this.state = {
-      project: this.project
+      project: this.project,
+      visible: false,
     }
   }
 
   componentWillReceiveProps(props) {
     this.project = api.getProject(props.match.params.url);
     this.state = {
-      project: this.project
+      project: this.project,
+      visible: false
     };
+    // Fade in on project change
+    const constThis = this;
+    setTimeout(function(){
+      constThis.setState({ visible: true });
+      }, 50);
   }
 
   componentDidMount() {
-    //preload first slider image
-    new Image().src = '/img/work/'+this.project[0].class+'/1.png'
+    // Preload images
+    Array.from({length: this.project[0]['images']}, (item, index) =>
+      new Image().src = '/img/work/'+this.project[0]['class']+'/'+(index+1)+'.png'
+    );
+    this.setState({ visible: true });
   }
 
   setSlideRest(obj) {
+    // Reset slider
     obj.refs && obj.refs.slider && obj.refs.slider.slickGoTo(0);
   }
 
@@ -45,7 +56,7 @@ class Single extends React.Component {
     };
 
     return (
-      <div className="animated fadeIn single">
+      <div className={this.state.visible ? 'fadeIn animated single' : 'opacity-0 animated single'}>
         <header>
           <nav className="g-clearfix">
             <ul>

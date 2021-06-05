@@ -75,15 +75,15 @@ class Single extends React.Component {
               <ul className="g-connect">
                 {
                   project.case &&
-                            <li><a href={project.case} rel="noopener noreferrer" target="_blank"><i className="fas fa-external-link-alt"/> Case study</a></li>
+                            <li><a href={project.case} rel="noopener noreferrer" target="_blank"><i className="fas fa-external-link-alt"/>Case study</a></li>
                 }
                 {
                   project.prototype &&
-                            <li><a href={project.prototype} rel="noopener noreferrer" target="_blank"><i className="fas fa-laptop-code"/> Prototype</a></li>
+                            <li><a href={project.prototype} rel="noopener noreferrer" target="_blank"><i className="fas fa-laptop-code"/>Prototype</a></li>
                 }
                 {
                   project.live &&
-                            <li><a href={project.live} rel="noopener noreferrer" target="_blank"><i className="fas fa-desktop"/> Vist website</a></li>
+                            <li><a href={project.live} rel="noopener noreferrer" target="_blank"><i className="fas fa-desktop"/>Visit website</a></li>
                 }
               </ul>
               <div className="row">

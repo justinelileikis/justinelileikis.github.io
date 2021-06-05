@@ -3222,13 +3222,13 @@ textarea {
 }
 
 a {
-  color: #4545b1;
-  text-decoration: none;
+  color: #353537;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
 }
-a:hover, a:focus, a:active {
-  color: #ABA8B0;
+a:hover {
+  color: #6A686E;
   text-decoration: none;
 }
 a.g-disabled {
@@ -3405,13 +3405,12 @@ ul.g-connect li a {
   padding: 3px 5px;
   text-decoration: none;
   margin-right: 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   background: linear-gradient(to bottom, transparent 50%, #eeeef8 50%);
   background-size: 200% 200%;
   background-position: top;
   transition: all 100ms linear;
-  color: #6A686E;
 }
 ul.g-connect li a i {
   display: inline-block;
@@ -4396,7 +4395,7 @@ html, body, .main, .page, .animated {
   z-index: 10;
 }
 .g-featured h2 {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 17px;
   top: 100%;
   margin-top: -40px;
@@ -4406,6 +4405,7 @@ html, body, .main, .page, .animated {
   width: 100%;
   background: #4545b1;
   color: #fff;
+  font-weight: bold;
 }
 @media (min-width: 921px) {
   .g-featured:hover .g-text {

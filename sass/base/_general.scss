@@ -53,11 +53,11 @@ textarea {
 
 a {
   color: $link-color;
-  text-decoration: none;
   cursor: pointer;
   font-weight: 600;
   @extend .transition;
-  &:hover, &:focus, &:active {
+  text-decoration: none;
+  &:hover {
     color: $link-hover-color;
     text-decoration: none;
   }

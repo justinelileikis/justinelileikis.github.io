@@ -16,7 +16,7 @@ class Home extends React.Component {
               <li><a href="mailto:justinelileikis@gmail.com"><i className="fas fa-envelope"/>Email</a></li>
               <li><a href="https://ca.linkedin.com/in/justinelileikis" rel="noopener noreferrer" target="_blank"><i className="fab fa-linkedin"/>LinkedIn</a></li>
             </ul>
-            <p>Justine is the type of web developer who not only writes quality code but is also a great collaborator and communicator. With a BA in Visual Arts from Western University in addition to her Graduate Certificate in Interactive Media, Justine has a keen UX and visual design sense that ensures the value of research, strategy and design is carried over into everything she builds.</p>
+            <p>Justine is the type of software developer who not only writes quality code but is also a great collaborator and communicator. With a BA in Visual Arts from Western University in addition to her Graduate Certificate in Interactive Media, Justine has a keen UX and visual design sense that ensures the value of research, strategy and design is carried over into everything she builds.</p>
           </div>
           <div className="g-profile-work">
             <h2 className="g-margin-top">Selected work</h2>

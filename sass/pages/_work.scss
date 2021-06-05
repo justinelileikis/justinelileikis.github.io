@@ -36,7 +36,7 @@
 	}
 	h2{
 		@extend .transition2;
-		font-size: 15px;
+		font-size: 16px;
 		line-height: 17px;
 		top: 100%;
 		margin-top: -40px;
@@ -46,6 +46,7 @@
 		width: 100%;
 		background: #4545b1;
 		color: #fff;
+		font-weight: bold;
 	}
 	@media (min-width: $min-break-tablet) {
 		&:hover {

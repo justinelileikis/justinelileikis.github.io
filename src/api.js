@@ -215,6 +215,7 @@ const api = {
     text: 'Confluence is the City of Winnipeg’s digital visual language presented as accessible UI components combined with UX and accessibility guidelines.',
     class: 'cw',
     role: 'Full stack development',
+    live: 'https://winnipeg.ca/designsystem/',
     websites: true,
     designsystems: true,
     images: 7,

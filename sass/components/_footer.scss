@@ -14,13 +14,12 @@ ul.g-connect{
 			padding: 3px 5px;
 			text-decoration: none;
 			margin-right: 20px;
-			font-size: 14px;
+			font-size: 16px;
 			font-weight: bold;
 			background: linear-gradient(to bottom, transparent 50%, lighten($primary-3, 47%) 50%);
 			background-size: 200% 200%;
 			background-position: top;
 			transition: all 100ms linear;
-			color: $grey-3;
 			i{
 				display: inline-block;
 				color: $primary-3;

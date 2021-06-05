@@ -20,28 +20,32 @@ class Single extends React.Component {
       project: this.project,
       visible: false
     };
+    this.resetSlider(this);
+    // Preload slider images
+    Array.from({length: this.project[0]['images']}, (item, index) =>
+      new Image().src = '/img/work/'+this.project[0]['class']+'/'+(index+1)+'.png'
+    );
     // Fade in on project change
     const constThis = this;
     setTimeout(function(){
       constThis.setState({ visible: true });
-      }, 50);
+    }, 50);
   }
 
   componentDidMount() {
-    // Preload images
+    // Preload slider images
     Array.from({length: this.project[0]['images']}, (item, index) =>
       new Image().src = '/img/work/'+this.project[0]['class']+'/'+(index+1)+'.png'
     );
     this.setState({ visible: true });
   }
 
-  setSlideRest(obj) {
-    // Reset slider
+  // Reset slider to first image
+  resetSlider(obj) {
     obj.refs && obj.refs.slider && obj.refs.slider.slickGoTo(0);
   }
 
   render() {
-    this.setSlideRest(this);
     window.scrollTo(0, 0);
     const project = this.state.project[0];
     const settings = {

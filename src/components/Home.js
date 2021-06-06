@@ -1,8 +1,27 @@
 import React from 'react'
 import api from "../api";
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 class Home extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.projects = api.getProjects();
+    this.state = {
+      projects: this.projects,
+    };
+    this.loadProjectImages();
+  }
+
+  loadProjectImages() {
+    this.projects.forEach((project, index) => {
+      new Image().src =  '/img/work/'+project.class+'/'+project.class+'-bg.png';
+      Array.from({length: project['images']}, (item, i) => {
+          new Image().src = '/img/work/'+project['class']+'/'+(i+1)+'.png';
+      })
+    });
+  }
+
   render() {
     return (
       <div className="animated fadeIn">
@@ -22,7 +41,7 @@ class Home extends React.Component {
             <h2 className="g-margin-top">Selected work</h2>
             <div className="row margin-bottom g-margin-top">
               {
-                api.getProjects().map((p, index) => (
+                this.projects.map((p, index) => (
                   <div className="col-1of4 sm-1of2 xs-1of2" key={p.url}>
                     <div className="animated fadeIn g-featured" style={{ backgroundImage: `url(/img/work/${p.class}/${p.class}.png)`, animationDelay: `${index}`+'00ms' }}>
                       <Link className="g-featured-link" to={p.url}/>

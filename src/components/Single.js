@@ -21,10 +21,8 @@ class Single extends React.Component {
       visible: false
     };
     this.resetSlider(this);
-    // Preload slider images
-    Array.from({length: this.project[0]['images']}, (item, index) =>
-      new Image().src = '/img/work/'+this.project[0]['class']+'/'+(index+1)+'.png'
-    );
+    // Preload project images
+    this.loadProjectImages();
     // Fade in on project change
     const constThis = this;
     setTimeout(function(){
@@ -33,11 +31,16 @@ class Single extends React.Component {
   }
 
   componentDidMount() {
-    // Preload slider images
+    // Preload project images
+    this.loadProjectImages();
+    this.setState({ visible: true });
+  }
+
+  loadProjectImages() {
+    new Image().src =  '/img/work/'+this.project[0].class+'/'+this.project[0].class+'-bg.png';
     Array.from({length: this.project[0]['images']}, (item, index) =>
       new Image().src = '/img/work/'+this.project[0]['class']+'/'+(index+1)+'.png'
     );
-    this.setState({ visible: true });
   }
 
   // Reset slider to first image
